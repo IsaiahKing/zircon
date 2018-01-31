@@ -16,5 +16,8 @@ typedef struct {
     io_buffer_t usb_phy;
 } vim_bus_t;
 
+// vim-bt-uart.c
+zx_status_t vim_bt_uart_init(vim_bus_t* bus);
+
 // vim-usb.c
 zx_status_t vim_usb_init(vim_bus_t* bus);

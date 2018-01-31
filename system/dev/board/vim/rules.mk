@@ -10,6 +10,7 @@ MODULE_TYPE := driver
 
 MODULE_SRCS += \
     $(LOCAL_DIR)/vim.c \
+    $(LOCAL_DIR)/vim-bt-uart.c \
     $(LOCAL_DIR)/vim-usb.c \
 
 MODULE_STATIC_LIBS := \

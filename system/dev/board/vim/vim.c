@@ -94,6 +94,9 @@ static zx_status_t vim_bus_bind(void* ctx, zx_device_t* parent) {
     if ((status = vim_usb_init(bus)) != ZX_OK) {
         zxlogf(ERROR, "vim_usb_init failed: %d\n", status);
     }
+    if ((status = vim_bt_uart_init(bus)) != ZX_OK) {
+        zxlogf(ERROR, "vim_bt_uart_init failed: %d\n", status);
+    }
 
     if ((status = pbus_device_add(&bus->pbus, &display_dev, 0)) != ZX_OK) {
         zxlogf(ERROR, "vim_bus_bind could not add display_dev: %d\n", status);

@@ -15,3 +15,4 @@
 #define DC_CAV_LUT_ADDR_RD_EN       (1 << 8)
 #define DC_CAV_LUT_ADDR_WR_EN       (2 << 8)
 
+// Bluetooth UART registers
